@@ -1,0 +1,1 @@
+class Product {  String Name ;  String Price ;  String Couleur ;  Product({this.Name,this.Price,this.Couleur});}

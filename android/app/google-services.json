@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "702529963747",
+    "project_id": "fabrication-d5433",
+    "storage_bucket": "fabrication-d5433.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702529963747:android:4e0a740faba0c43e87a7d6",
+        "android_client_info": {
+          "package_name": "com.example.fabrication2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702529963747-rurlrq7sqjjadr85cujrj4fm33mua01q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcXck1AgBG_qbYVRIpcfSdhKyDyNTdc38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702529963747-rurlrq7sqjjadr85cujrj4fm33mua01q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702529963747:android:5390e5c758d9e8a287a7d6",
+        "android_client_info": {
+          "package_name": "djellali.dev.sadilgsm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702529963747-rurlrq7sqjjadr85cujrj4fm33mua01q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcXck1AgBG_qbYVRIpcfSdhKyDyNTdc38"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702529963747-rurlrq7sqjjadr85cujrj4fm33mua01q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

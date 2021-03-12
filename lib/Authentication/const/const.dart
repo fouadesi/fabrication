@@ -1,0 +1,1 @@
+class Constant { static String invalideemail = "يرجى إدخال بريد إلكتروني صحيح" ; static String invalidepassword = "يرجى إدخال كلمة سر صحيحة" ; static String invalidename = "يرجى إدخال إسم صحيح" ; static String email =  "البريد الإلكتروني  " ; static String passowrd  ="كلمة السر" ;}

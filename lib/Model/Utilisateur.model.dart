@@ -1,0 +1,1 @@
+class Utilisateur {  String Name ;  String Lastname ;  String Email ;  String Id ;  String Adresse ;  Utilisateur({this.Name,this.Lastname,this.Email,this.Id,this.Adresse});  toMap() {    return {      "Name" : this.Name ,      "Lastname" : this.Lastname ,      "Email": this.Email ,      "Id" : this.Id,      "Adresse" : this.Adresse ?? "Default",    };  }}
