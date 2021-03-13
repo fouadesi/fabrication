@@ -57,15 +57,19 @@ class _MyAppState extends State<MyApp> {
       if (user != null) {
         return MultiProvider(
           providers: [
-
+            StreamProvider<List<prodcuct>>.value(
+                value:
+            DatabaseService().streamuserproducts(user.uid),
+            initialData: [],),
           StreamProvider<User>.value(value:
           FirebaseAuth.instance.authStateChanges()),
             StreamProvider<List<Cat1>>.value(value:
-            DatabaseService().stream_cats()),
+            DatabaseService().stream_cats(),
+            initialData: [],),
             StreamProvider<List<Cat2>>.value(value:
-            DatabaseService().stream_cats2()),
+            DatabaseService().stream_cats2(),initialData: [],),
             StreamProvider<List<Cat3>>.value(value:
-            DatabaseService().stream_cats3())
+            DatabaseService().stream_cats3(),initialData: [],)
         ],
         child: MaterialApp(
           debugShowCheckedModeBanner: false,
@@ -73,6 +77,7 @@ class _MyAppState extends State<MyApp> {
           home: firstWidget,
         ),);
       }else {
+
         return MultiProvider(
           providers: [
           StreamProvider<User>.value(value:

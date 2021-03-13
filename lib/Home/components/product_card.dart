@@ -81,7 +81,22 @@ class ProductCard extends StatelessWidget {
                           onTap: () {
                             FirebaseFirestore.instance.collection(
                                 "ItemOrder").doc(user.uid).collection("items").
-                            doc(product.id).set(product.map());
+                            doc(product.id).set(product.map()).then((value) {
+                              showDialog(
+                                  barrierDismissible: true,
+                                  context: context,
+                                  builder: (context) => AlertDialog(
+                                      title: Column(
+                                        children: [
+                                         Row(
+                                           children: [
+                                             Text("تمت إضافة المنتج إلى سلة المشتريات",
+                                               style: GoogleFonts.tajawal(fontSize: 15),)
+                                           ],
+                                         )
+                                        ],
+                                      )));
+                            });
 
                           },
                             child: Icon(Icons.add_shopping_cart,color: Colors.white,size: 18,)),
