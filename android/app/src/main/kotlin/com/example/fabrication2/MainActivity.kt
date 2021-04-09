@@ -1,4 +1,4 @@
-package com.example.fabrication2
+package fab.vente.fabrication2
 
 import io.flutter.embedding.android.FlutterActivity
 

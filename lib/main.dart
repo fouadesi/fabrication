@@ -11,6 +11,7 @@ import 'package:provider/provider.dart';
 
 import 'Authentication/login.widget.dart';
 import 'Home/models.dart';
+import 'Model/Product.widget.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -61,6 +62,10 @@ class _MyAppState extends State<MyApp> {
                 value:
             DatabaseService().streamuserproducts(user.uid),
             initialData: [],),
+            StreamProvider<List<Pending_Order>>.value(
+              value: DatabaseService().streampendingOrder(user.uid),
+              initialData: [],
+            ),
           StreamProvider<User>.value(value:
           FirebaseAuth.instance.authStateChanges()),
             StreamProvider<List<Cat1>>.value(value:
